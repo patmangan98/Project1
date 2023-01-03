@@ -1,50 +1,76 @@
+# Wire Frame
 
+![Landing](home/pat/sei.)
 
 
 
 USER STATEMENTS FOR SPACEMAN
 
-As a user I want 
+# As a user I want.. 
 
-Version 1- MVP
-    to see the rocket  -->
-    to see the number of spaces that respresnt all the letters of the word
-    to see my current correct guesses show up in the word spaces
-    to have an input for a word 
-    to have a message if my guess was wrong 
-    to have a start game button 
-    to see a message when I win 
-    to see a message when i loose
-    to start a new game 
-    to have a guess remaing counter 
+## Version 1- MVP
+-to see the rocket.
 
-Version 2 
-    to have a message if my guess was correct
-    to have a hint button 
-    to have the option to create phrases 
-    to have a tally of how many games each player has won 
-    to play against a computer 
-    to see a rules/game explanation guide
-    to be able to reset the game (incase someone mispells the word or something)
-    to see my prior incorrect guesses show up in a blank space 
-Version 3
-    to see a progress bar for refueling the rocket
-    to see an animation when the rocket takes off
-    to play against a difficult computer generated word 
-    to have a level system where I land on different planets 
-    to have the option to add extra guess attempts
-    to have the option to set the number of allowed hints 
+-to see the number of spaces that respresnt all the letters of the word
 
+-to see my current correct guesses show up in the word spaces
 
-Psuedo Code for MVP
+-to have an input for a word 
 
-<!-- Delcare Contstants For The Game Controller -->
+-to have a message if my guess was wrong 
+
+-to have a start game button 
+
+-to see a message when I win 
+
+-to see a message when i loose
+
+-to start a new game 
+
+-to have a guess remaing counter 
+
+## Version 2 
+
+-to have a message if my guess was correct
+
+-to have a hint button 
+
+-to have the option to create phrases 
+
+-to have a tally of how many games each player has won 
+
+-to play against a computer 
+
+-to see a rules/game explanation guide
+
+-to be able to reset the game (in case someone mispells the word)
+
+-to see my prior incorrect guesses show up in a blank space 
+
+## Version 3
+
+-to see a progress bar for refueling the rocket
+
+-to see an animation when the rocket takes off
+
+-to play against a difficult computer generated word 
+
+-to have a level system where I land on different planets 
+
+-to have the option to add extra guess attempts
+
+-to have the option to set the number of allowed hints 
+
+#
+# Psuedo Code for MVP
+
+### Delcare Contstants For The Game Controller
 
     CONST alpabet = "the alphabet stored in a string"
 
     CONST maxIncorrectGuesses = 6
 
-<!-- Declare state variables to be updated in the init function -->
+### Declare state variables to be updated in the init function
 
     let word
 
@@ -54,7 +80,7 @@ Psuedo Code for MVP
 
     let gamerOver
 
-<!-- Declare Constants used for viewing the game  -->
+### Declare Constants used for viewing the game 
 
     CONST wordElement =  value of the input text bar, id of wordElement
 
@@ -72,7 +98,7 @@ Psuedo Code for MVP
     
     CONST rocketDisplay = html div with id of rocketDisplay
 
-<!-- Initialize Function  -->
+### Initialize Function 
 
     CONST initialize = () => {
         let incorrectGuesses = 0
@@ -83,8 +109,8 @@ Psuedo Code for MVP
     FOR LOOP (i < Word.length) {  
         spaces.push("_")
     }
-<!-- 
-Game Logic -->
+
+### Game Logic 
 
     While loop (gameOver is not true) {
         create document element p
@@ -114,7 +140,7 @@ Game Logic -->
         update move counter to read `You win the word was $
     }
 
-<!-- Created render related functions  -->
+### Create render related functions 
 
     Const moveCounter {
         msgContainer innertext equals `${correctGuess + inorrectGuess}
@@ -175,6 +201,7 @@ Game Logic -->
         loadPreviousLetters()
         initalize()
         createRocket()
+        createSpaces()
     }
 
 
