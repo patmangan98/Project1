@@ -1,65 +1,48 @@
 # Wire Frame
 
-![Landing](home/pat/sei.)
+![Landing Page](landing_page.jpg)
+![Game Page](game_page.jpg)
+![Final Page](final_page.jpg)
+
+#
+<h1> USER STATEMENTS FOR SPACEMAN:  As a user I want.. </h1>
 
 
-
-USER STATEMENTS FOR SPACEMAN
-
-# As a user I want.. 
+<header>
 
 ## Version 1- MVP
--to see the rocket.
 
--to see the number of spaces that respresnt all the letters of the word
-
--to see my current correct guesses show up in the word spaces
-
--to have an input for a word 
-
--to have a message if my guess was wrong 
-
--to have a start game button 
-
--to see a message when I win 
-
--to see a message when i loose
-
--to start a new game 
-
--to have a guess remaing counter 
+- to see the rocket.
+- to see the number of spaces that respresnt all the letters of the word
+- to see my current correct guesses show up in the word spaces
+- to have an input for a word 
+- to have a message if my guess was wrong 
+- to have a start game button 
+- to see a message when I win 
+- to see a message when i loose
+- to start a new game 
+- to have a guess remaing counter 
 
 ## Version 2 
 
--to have a message if my guess was correct
-
--to have a hint button 
-
--to have the option to create phrases 
-
--to have a tally of how many games each player has won 
-
--to play against a computer 
-
--to see a rules/game explanation guide
-
--to be able to reset the game (in case someone mispells the word)
-
--to see my prior incorrect guesses show up in a blank space 
+- to have a message if my guess was correct
+- to have a hint button 
+- to have the option to create phrases 
+- to have a tally of how many games each player has won 
+- to play against a computer 
+- to see a rules/game explanation guide
+- to be able to reset the game (in case someone mispells the word)
+- to see my prior incorrect guesses show up in a blank space 
 
 ## Version 3
 
--to see a progress bar for refueling the rocket
-
--to see an animation when the rocket takes off
-
--to play against a difficult computer generated word 
-
--to have a level system where I land on different planets 
-
--to have the option to add extra guess attempts
-
--to have the option to set the number of allowed hints 
+- to see a progress bar for refueling the rocket
+- to see an animation when the rocket takes off
+- to play against a difficult computer generated word 
+- to have a level system where I land on different planets 
+- to have the option to add extra guess attempts
+- to have the option to set the number of allowed hints 
+</header>
 
 #
 # Psuedo Code for MVP
@@ -219,3 +202,19 @@ USER STATEMENTS FOR SPACEMAN
         assign an ID to the newly created element (BlankSpace)
         blankWordSpace.innertext = value of the variable spaces
     }
+
+
+<style>
+    h1 {
+        text-align: center;
+    }
+    header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    h3 {
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+</style>
