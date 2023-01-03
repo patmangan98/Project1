@@ -51,11 +51,13 @@
 
     CONST alpabet = "the alphabet stored in a string"
 
-    CONST maxIncorrectGuesses = 6
+    CONST maxIncorrectGuesses = 6 + word[i].length
 
 ### Declare state variables to be updated in the init function
 
-    let word
+    let words = array of words to be chosen at random
+
+    let randomWords = 
 
     let spaces = blank array
 
@@ -63,13 +65,11 @@
 
     let gamerOver
 
+    let corrrectGuess
+
 ### Declare Constants used for viewing the game 
 
-    CONST wordElement =  value of the input text bar, id of wordElement
-
-    CONST guessElement = value of the letter input into the guess bar, id guessElement
-
-    CONST wordSubmit = submit button for the word you want people to guess, id wordSubmit
+    CONST wordSubmit = submit button for picking a word at random id wordSubmit
 
     CONST letterSubmit = submit button for the letter you want to guess, id Letter Submit 
 
@@ -86,7 +86,7 @@
     CONST initialize = () => {
         let incorrectGuesses = 0
         let gameOver = false
-        let word = wordElement.split('')
+        let word = ['Wizards', 'Commanders', 'Capitals', 'Nationals']
     }
 
     FOR LOOP (i < Word.length) {  
@@ -95,15 +95,29 @@
 
 ### Game Logic 
 
-    While loop (gameOver is not true) {
+    Const pick a word = (word arr) => {
+        let randomWord = math.floor math.random() * word arr .length
+    }
+
+
+    While loop (gameOver is false) {
+
         create document element p
+
         set inter text to 'make a guess'
+
         appendChild to msgContainer
+
         search the wordElement for the value of guessElement 
+
         set let correctGuesses = false
-      if (word.join('').search(guess) !== -1) {
-         for loop (through the word.length) {
+
+      if (word{i}.search(guess) !== -1) {
+
+         inorrectguesses == 1
+
             if the (index of the word === guess) {
+
                 the index of spaces = guess
             } 
          }
@@ -114,13 +128,13 @@
         incorrectGuess++
     }
         
-    if (incorrect guesses >= maxIncorrectGuesses){
+    if (spaces[i].search("_") = -1 && incorrectguesses >= maxIncorrectGuesses){
          gameOver = true
     }      
-    if (gameOver = true) {
+    if (gameOver = true && spaces[i].search("_") = -1 && incorrectguess >= maxIncorrectGuesses) {
         then update msgContainer to read `You lose the word was ${word}` { 
     } else {
-        update move counter to read `You win the word was $
+        update move counter to read `You win the word was $`
     }
 
 ### Create render related functions 
@@ -129,25 +143,20 @@
         msgContainer innertext equals `${correctGuess + inorrectGuess}
     }
 
-    CONST load word Screen = (event) => { ///revise later
-        inputWord = create input element
-            .setAttribute = ('type', 'text') 
-            .setAttibute = ('id' , 'wordElement')
-        wordSubmit = create submit element
-            .setAttribute('type', 'submit')
-            .setAttribute('id' , 'wordSubmit')
-            appendChild() the letter input to the container
-            appendchild the submit button to the container
+    CONST Pick A Word Screen = (wordarr) => { ///revise later
+        create a new html element button
+        setAttribute of the button to have an id of wordSubmit 
+        appendChild to container 
     }
 
-    newGame.addeventlistener(Submit form, load word screen) 
+    newGame.addeventlistener('click', pick a word Screen) 
     
     CONST hideWordScreen = (event) => {
-       set the display attribute of inputWord to none
        set the CSS display attritbute of WordSubmit to none 
     }   
 
-    wordSubmit.addEventListener('submit', hideWordScreen)
+    wordSubmit.addEventListener('click', hideWordScreen)
+    wordSubmit.addEventListener('click', pick a word)
 
     CONST loadGuess = (event) => {
         Letter input = create an input element
@@ -189,7 +198,7 @@
 
 
 
-    wordSubmit.addEventListener('submit', render)
+    wordSubmit.addEventListener('click', render)
 
     
     CONST createSpaces = (word) => { 
