@@ -10,12 +10,20 @@
 <body>
     <header>
         <h1>Welcome to SpaceMan!</h1>
+        <button id="newGame">New Game</button>
+        <div id="msgcontainer">
+            <p id="printmsg"></p>
+        </div>
     </header>
     <div id="cont">
-        <button id="newGame">New Game</button>
-            <div id="msgcontainer">
-                <p id="printmsg"></p>
-            </div>
+        <div id="rocket"></div>
+
+
+        <form>
+            <input type="text" id="letter">
+            <input type="submit" id ="lettersubmit">
+        </form>
+        
     </div>
     <script defer src="./app.js"></script>
 </body>
