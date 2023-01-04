@@ -1,28 +1,33 @@
 html {
     max-width: 1500px;
-    display: flex;
-    
+    max-height: 100%;
 }
 
-body {
-    display: flex;
+header {
+    text-align: center;
 }
-
-div {
-    display: flex;
+#rocket {
+    font-size: 5rem;
+    padding-top: 30px;
+    text-align: center;
 }
-p {
-    font-size: ;
+#printmsg {
+    font-size: 1rem ;
+    /* padding-left: ; */
+    text-align: center;
 }
 #newGame {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     
-}
-#wordSubmit {
-    display: flex;
 }
 form {
     display: flex;
     align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+#blankSpaces {
+    text-align: center;
+    font-size: 3rem;
+    padding-left: 20px;
 }
