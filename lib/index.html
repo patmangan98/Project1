@@ -6,30 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Spaceman</title>
 </head>
 <body>
     <header>
         <h1>Welcome to SpaceMan!</h1>
-        <button id="newGame">New Game</button>
-        <div id="msgcontainer">
-            <p id="printmsg"></p>
-        </div>
+        <p id="guesses">Guesses Left</p>
+        <p id="guessesLeft">6</p>
+        <h2>Use the letters below to guess the word <br>so the astronaut can fuel up and go home<br></h2>
     </header>
     
-    <div id="cont">
-        <div id="rocket">
-            <i class="fa-brands fa-space-awesome"></i>
-        </div>
-        <p id="blankSpaces"></p>
-        <form>
-            <input type="text" id="letter">
-            <input type="submit" id ="lettersubmit">
-        </form>
-        
-        
-    </div>
-    
+    <main>
+        <div id="cont">
+            <div id="rocket">
+                <i class="fa-brands fa-space-awesome"></i>  
+                <p id="blankSpaces"></p>
+            </div>
+         
+
+        </div>        
+        <div id="alphabetCont"></div>
+    </main>
+    <footer>
+        <p id ="printMsg"></p>
+    </footer>
     
     <script defer src="./app.js"></script>
 </body>
