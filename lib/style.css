@@ -20,16 +20,12 @@ header {
     text-align: center;
     
 }
-form {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    text-align: center;
-}
 #blankSpaces {
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: red;
     font-size: 3rem;
-    padding-left: 20px;
 }
 
 .alphabetCont {
@@ -38,28 +34,20 @@ form {
     margin-right: auto;
     width: 50%;
 }
-#alphabet ul{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
+
+ul {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin-right: 10px; 
+margin-left: 10px;
 }
-#alphabet li{
+
+#alphabet li {
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: 
-    width: 35px;
     height: 30px;
+    width: 30px;
+    justify-content: space-evenly;
     border: 1px solid black ;
 }
 
-.letter {
-    border: 1px solid black;
-    background-color: aqua;
-    color:black;
-    text-align: center;
-    float: left;
-}
