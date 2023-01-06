@@ -30,24 +30,11 @@ header {
 
 .alphabetCont {
     display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 
-ul {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-margin-right: 10px; 
-margin-left: 10px;
-}
 
-#alphabet li {
-    list-style: none;
-    height: 30px;
-    width: 30px;
-    justify-content: space-evenly;
-    border: 1px solid black ;
-}
 
