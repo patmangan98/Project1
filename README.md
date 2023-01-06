@@ -15,7 +15,7 @@
 - to see the rocket.
 - to see the number of spaces that respresnt all the letters of the word
 - to see my current correct guesses show up in the word spaces
-- to have an input for a word 
+- to have an input for a letter 
 - to have a message if my guess was wrong 
 - to have a start game button 
 - to see a message when I win 
