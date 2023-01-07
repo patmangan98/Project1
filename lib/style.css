@@ -1,56 +1,54 @@
 html {
-    max-width: 100%S;
-    max-height: 100%;
+    max-width: 1920;
+    max-height: 1080;
 }
-
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Bangers', cursive;;
+}
 main {
     display: none;
+    flex-direction: column;
+    justify-content: center;
 }
-/* header {
-    text-align: center;
+#guesses{
+    display: flex;
+    justify-content: center;
+    font-family: 'Bangers', cursive;;
+}
+#guessesLeft {
+    display: flex;
+    justify-content: center;
+    font-family: 'Bangers', cursive;;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+#cont {
+    display: flex;
+    flex-direction: column;
 }
 #rocket {
     font-size: 5rem;
-    padding-top: 30px;
-    text-align: center;
 }
-#printmsg {
-    font-size: 1rem ;
-    /* padding-left: ; 
-
-#newGame {
-    text-align: center; 
-}
-
 #blankSpaces {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: red;
+    display:flex;
+    justify-content: center;
     font-size: 3rem;
 }
-
-.alphabetCont {
+#printMsg {
     display: flex;
     justify-content: center;
-    margin:auto
-
+    font-size: 3rem;
+    font-family: 'Bangers', cursive;;
 }
-
-#rocket {
-    padding-bottom: 10px;
-    margin: auto;
-    padding-top: 10px;
+button {
+    text-align: center;
+    font-family: 'Bangers', cursive;;
 }
-
-#progressBar {
-    height: 30px;
-    width: 400px;
-    background-color: lightslategray;
-} */
-/* 
-#bar {
-    height: 30px;
-    width: 10%;
-    background-color: aqua;
-} */
+input {
+    display: flex;
+}
