@@ -7,6 +7,12 @@ header {
     flex-direction: column;
     text-align: center;
     font-family: 'Bangers', cursive;;
+    margin: auto;
+}
+#startGame {
+    display: flex;
+    justify-content: center;
+    width
 }
 main {
     display: none;
@@ -49,6 +55,12 @@ button {
     text-align: center;
     font-family: 'Bangers', cursive;;
 }
-input {
+form {
     display: flex;
+    justify-content: center;
+}
+#startGame button {
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
