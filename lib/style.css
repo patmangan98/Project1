@@ -1,6 +1,7 @@
 html {
     max-width: 1920;
     max-height: 1080;
+    background-color: #637CBD;
 }
 header {
     display: flex;
@@ -9,10 +10,38 @@ header {
     font-family: 'Bangers', cursive;;
     margin: auto;
     letter-spacing: 0.1rem;
+    color: #FFFF;
+    margin-bottom: 10px;
+}
+h1 {
+    letter-spacing: 0.3rem;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Bangers', cursive;;
+    padding: 10px 12px 10px 10px;
+    margin: 0px 5px 0px 5px; 
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    border-style: none;
+    margin-top: 10px;
+}
+button:hover{
+    transform: scale(1.2);
 }
 #startGame {
     margin: auto;
+    font-size: 2.1rem;
+    border-radius: 8px;
+    border: none;
+    padding: 0.1em .5em;
 }
+
 main {
     display: none;
     flex-direction: column;
@@ -22,11 +51,20 @@ main {
     display: flex;
     justify-content: center;
     font-family: 'Bangers', cursive;;
+    margin-bottom: 5px;
+    color: #FFFF;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
 }
 #guessesLeft {
     display: flex;
     justify-content: center;
     font-family: 'Bangers', cursive;;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    color: #FFFF;
+    font-size: 1.5rem;
+    letter-spacing: 0.8rem;
 }
 div {
     display: flex;
@@ -37,27 +75,76 @@ div {
     flex-direction: column;
 }
 #rocket {
-    font-size: 5rem;
+    font-size: 8rem;
+    color: #FFFF;
 }
 #blankSpaces {
     display:flex;
     justify-content: center;
     font-size: 3rem;
     font-family: 'Bangers', cursive;;
+    letter-spacing: 0.3rem;
+    color: #FFFF;
+    margin-bottom: 10px;
 }
 #printMsg {
     display: flex;
     justify-content: center;
     font-size: 3rem;
     font-family: 'Bangers', cursive;;
+    color: #FFFF;
 }
-button {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Bangers', cursive;;
-}
+
 form {
     display: flex;
     justify-content: center;
+}
+#newGame {
+    margin: auto;
+    font-size: 2.1rem;
+    border-radius: 8px;
+    border: none;
+    padding: 0.1em .5em;
+    font-family: 'Bangers', cursive;;
+}
+@media only screen and (max-width: 800px) {
+    #alphabetCont {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    #printMsg {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+        font-size: 1.5rem;
+    }
+    #blankSpaces {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Bangers', cursive;;
+        padding: 5px 10px 5px 8px;
+        margin: 0px 5px 0px 5px; 
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        border-style: none;
+        margin-top: 10px;
+    }
+    #welcomeMsg {
+        font-size: 1em;
+    }
 }
