@@ -8,11 +8,10 @@ header {
     text-align: center;
     font-family: 'Bangers', cursive;;
     margin: auto;
+    letter-spacing: 0.1rem;
 }
 #startGame {
-    display: flex;
-    justify-content: center;
-    width
+    margin: auto;
 }
 main {
     display: none;
@@ -44,6 +43,7 @@ div {
     display:flex;
     justify-content: center;
     font-size: 3rem;
+    font-family: 'Bangers', cursive;;
 }
 #printMsg {
     display: flex;
@@ -52,15 +52,12 @@ div {
     font-family: 'Bangers', cursive;;
 }
 button {
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-family: 'Bangers', cursive;;
 }
 form {
-    display: flex;
-    justify-content: center;
-}
-#startGame button {
-    margin: auto;
     display: flex;
     justify-content: center;
 }
